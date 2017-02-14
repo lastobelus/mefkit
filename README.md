@@ -1,2 +1,2 @@
-# mefkit [![Travis](https://img.shields.io/travis/lastobelus/mefkit.svg)](https://travis-ci.org/lastobelus/mefkit)
+# mefkit [![Travis](https://img.shields.io/travis/lastobelus/mefkit.svg)](https://travis-ci.org/lastobelus/mefkit)   [![Code Climate](https://img.shields.io/codeclimate/github/lastobelus/mefkit.svg)]()   [![Code Climate](https://img.shields.io/codeclimate/coverage/github/lastobelus/mefkit.svg)]()   [![Code Climate](https://img.shields.io/codeclimate/issues/github/lastobelus/mefkit.svg)]()
 **mefkit** is a Rails 5 sandbox.
