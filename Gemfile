@@ -40,7 +40,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-
+# the new Rails 5.1 integrated webpack support
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
 ############################################################################
 # Views
@@ -75,6 +76,7 @@ group :development do
 
   # Views & Generators
   gem 'html2slim'
+  gem 'foreman'
 end
 
 ############################################################################

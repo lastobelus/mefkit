@@ -17,4 +17,6 @@
 .byebug_history
 
 # Ignore Figaro configuration
-config/application.yml
+config/application.yml/public/packs
+/public/packs-test
+/node_modules
