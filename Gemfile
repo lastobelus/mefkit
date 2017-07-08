@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-ruby "2.4.1"
+ruby '2.4.1'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
+
 
 
 ############################################################################
@@ -28,6 +29,26 @@ gem 'bcrypt', '~> 3'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+
+############################################################################
+# Views
+############################################################################
+gem 'slim', require: 'slim/smart'
+gem "slim-rails"
+# Markdown
+gem 'redcarpet'
+
+
+
+############################################################################
+# Authentication & Authorization
+############################################################################
+gem 'devise'
+
 
 
 ############################################################################
@@ -43,19 +64,13 @@ gem 'jbuilder', '~> 2.5'
 # the new Rails 5.1 integrated webpack support
 gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
-############################################################################
-# Views
-############################################################################
-gem 'slim', require: 'slim/smart'
-gem "slim-rails"
-# Markdown
-gem "redcarpet"
 
 
 ############################################################################
 # Deployment
 ############################################################################
 gem 'figaro'
+
 
 
 ############################################################################
@@ -79,6 +94,8 @@ group :development do
   gem 'foreman'
 end
 
+
+
 ############################################################################
 # Test Tools
 ############################################################################
@@ -87,7 +104,3 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3'
 end
-
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
