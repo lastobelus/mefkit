@@ -1,0 +1,3 @@
+source .env
+echo $APP_DOMAIN
+heroku local -f Procfile.dev
