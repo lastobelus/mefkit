@@ -48,7 +48,9 @@ gem 'redcarpet'
 # Authentication & Authorization
 ############################################################################
 gem 'devise'
-
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'omniauth-google'
 
 
 ############################################################################
