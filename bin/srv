@@ -1,2 +1,2 @@
-source .env
+pgrep mailcatcher || mailcatcher &
 heroku local -f Procfile.dev

@@ -72,7 +72,8 @@ gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 # Deployment
 ############################################################################
 gem 'figaro'
-
+# admin dashboards, https://github.com/thoughtbot/administrate
+gem "administrate"
 
 
 ############################################################################

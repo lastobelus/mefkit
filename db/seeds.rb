@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+############################################################################
+# LastObelus Consulting setup
+############################################################################
+
+pw = SecureRandom.hex(32)
+admin = Admin.create(
+  email: 'lastobelus@mac.com',
+  password: pw,
+  password_confirmation: pw
+)
+token = admin.send_reset_password_instructions
+puts "http://localhost:3000/admins/password/edit?reset_password_token=#{token}"
