@@ -28,7 +28,7 @@ class Rename
   end
 
   def find_with_excludes
-    "find . -not \( -path ./.git -prune \) -not \( -path ./node_modules -prune \) -type f -print"
+    "find . -not \\( -path ./.git -prune \\) -not \\( -path ./node_modules -prune \\) -type f -print"
   end
 
   def camelize(string)
