@@ -22,9 +22,13 @@ class Rename
         'mefkit' => snake_name,
         '| Mefkit' => "| #{title_name}"
       }.each do |proto_name, new_name|
-        shell "find . -type f -print | xargs #{sed_i} 's/#{proto_name}/#{new_name}/g'"
+        shell "LC_CTYPE=C && LANG=C && #{find_with_excludes} | xargs #{sed_i} 's/#{proto_name}/#{new_name}/g'"
       end
     end
+  end
+
+  def find_with_excludes
+    "find . -not \( -path ./.git -prune \) -not \( -path ./node_modules -prune \) -type f -print"
   end
 
   def camelize(string)
