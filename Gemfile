@@ -77,6 +77,10 @@ group :development do
   # Views & Generators
   gem 'html2slim'
   gem 'foreman'
+
+  # memory profiling & benchmarks
+  gem "memory_profiler"
+  gem "derailed_benchmarks"
 end
 
 ############################################################################

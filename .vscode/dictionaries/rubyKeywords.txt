@@ -1,0 +1,13 @@
+gemfile
+gsub
+klass
+ljust
+openstruct
+rdoc
+rjust
+rspec
+rubocop
+rufo
+Sidekiq
+struct
+Tempfile

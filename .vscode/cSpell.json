@@ -1,0 +1,36 @@
+{
+    "version": "0.1",
+    "dictionaryDefinitions": [{
+            "name": "mefkit",
+            "path": "./dictionaries/mefkit.txt"
+        },
+        {
+            "name": "rubyKeywords",
+            "path": "./dictionaries/rubyKeywords.txt"
+        }
+    ],
+    "dictionaries": [
+        "mefkit"
+    ],
+    "languageSettings": [{
+            "languageId": "ruby",
+            "dictionaries": [
+                "rubyKeywords"
+            ]
+        },
+        {
+            "languageId": "gemfile",
+            "dictionaries": [
+                "rubyKeywords"
+            ]
+        },
+        {
+            "languageId": "jsonc",
+            "dictionaries": [
+                "rubyKeywords"
+            ]
+        }
+
+    ],
+    "words": []
+}
