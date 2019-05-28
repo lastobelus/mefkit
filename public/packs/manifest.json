@@ -1,3 +1,14 @@
 {
-  "application.js": "http://0.0.0.0:8080/packs/application.js"
+  "application.js": "/packs/js/application-ef32c4d9667bff13c780.js",
+  "application.js.map": "/packs/js/application-ef32c4d9667bff13c780.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-ef32c4d9667bff13c780.js"
+      ],
+      "js.map": [
+        "/packs/js/application-ef32c4d9667bff13c780.js.map"
+      ]
+    }
+  }
 }

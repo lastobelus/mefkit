@@ -45,10 +45,18 @@ Base:
   Javascript:
     ☐ javascript setup. improvement on sp system
     ☐ install and learn stimulus
+      ✔ install by generating new app with stimulus & copying bits @done(2019-05-28 11:26)
       ☐ https://blog.capsens.eu/stimulusjs-on-rails-101-f22a0818dff8
     ☐ review actioncable usage in sp-fulfillment and create some abstractions
     ☐ base has working actioncable OOB
+    ☐ learn to use typescript
+      ☐ bundle exec rails webpacker:install:typescript
 
+  Caching, Sessions, Redis:
+    ☐ install hiredis
+    ☐ ensure redis setup working (specs)
+    ☐ use redis for cache store (https://medium.com/@kirill_shevch/configuration-cache-and-rails-session-store-with-redis-b3ce6f64d1fc)
+    ☐ use redis for cookie store
   Sidekiq:
     ☐ sidekiq setup based on sp
     ☐ useful abstractions & plugins

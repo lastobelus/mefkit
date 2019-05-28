@@ -1,0 +1,11 @@
+Archive:
+  ✔ update to rails 5-2-3
+  ✔ generate fresh rails5.2.3 app with --webpacker=stimulus @done(2019-05-28 11:15)
+  ✔ update gemfile based on fresh app @done(2019-05-28 11:16)
+  update webpacker
+    ✔ bundle update webpacker @done(2019-05-28 11:16)
+    ✔ rails webpacker:binstubs @done(2019-05-28 11:16)
+    ✔ yarn upgrade @rails/webpacker --latest @done(2019-05-28 11:16)
+    ✔ yarn upgrade webpack-dev-server --latest @done(2019-05-28 11:16)
+    ✔ diff config file and use fresh config where appropriate @done(2019-05-28 11:27)
+    
