@@ -1,7 +1,71 @@
 # To Do
 
 Goals:
+  ☐ be able to deploy the walking skeleton of an app idea from a 1-2 hour storymapping session in less than 30 minutes
+  ☐ have a CI'd and CD'd rails starter app that is always up-to-date (automatic CI/CD of gem, rails, ruby, node upgrades)
+  ☐ rails app integration with github, with issue creation, action & screenshot recording
 
-Setup:
-  ✔ add vscode settings @done(2019-05-18 17:35)
-  ✔ add todos @done(2019-05-18 17:35)
+Base:
+  Setup:
+    ✔ add vscode settings @done(2019-05-18 17:35)
+    ✔ add todos @done(2019-05-18 17:35)
+
+  Specs:
+    ☐ add high voltage and an about Mefkit page, then add a request spec for about mefkit
+    ☐ CI with request spec
+    ☐ add devise
+    ☐ devise request specs, with CI
+    ☐ action cable setup
+    ☐ sidekiq setup
+    ☐ cypress sidekiq hello world 
+    ☐ cypress setup
+    ☐ action cable badge hello world with cypress test
+    ☐ cypress CI
+
+  Static Pages:
+    ☐ add high-voltage
+
+  Users:
+    ☐ devise setup
+    ☐ administrate setup
+    ☐ login with google
+    ☐ login with github
+    ☐ login with facebook
+
+  GUI/CSS:
+    ☐ choose a powerful widget platform
+      ☐ must be themeable
+      ☐ must be built on a standard
+      ☐ mdbootstrap?
+    ☐ personalize the styles/colors
+    ☐ add trix
+    ☐ choose a datepicker
+    ☐ evaluate https://flatpickr.js.org (see https://github.com/adrienpoly/rails_stimulus_flatpickr)
+
+  Javascript:
+    ☐ javascript setup. improvement on sp system
+    ☐ install and learn stimulus
+      ☐ https://blog.capsens.eu/stimulusjs-on-rails-101-f22a0818dff8
+    ☐ review actioncable usage in sp-fulfillment and create some abstractions
+    ☐ base has working actioncable OOB
+
+  Sidekiq:
+    ☐ sidekiq setup based on sp
+    ☐ useful abstractions & plugins
+    ☐ worker generators
+    ☐ base has working sidekiq OOB
+
+  Generators:
+    ☐ generator for index/edit/create/destroy (no show) scaffold
+    ☐ generator for index with editable (bip) fields
+    ☐ generator for popover editor in list
+    ☐ generator for popover new in list
+
+  Suspenders:
+    ☐ review suspenders and pull the pieces I want
+
+  Living Style Guide:
+
+  Deployment:
+    ☐ research economical alternatives to heroku for hosting multiple rails experiments, and choose one
+    ☐ invest $50/month on hosting & ensure CI/CD of the base on that hosting
