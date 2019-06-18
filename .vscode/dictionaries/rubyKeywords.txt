@@ -4,6 +4,7 @@ cloudflare
 cloudfront
 codeship
 downcase
+filterrific
 gemfile
 gsub
 hotfix
@@ -16,6 +17,7 @@ openstruct
 preload
 rdoc
 rjust
+rollbar
 rspec
 rubocop
 rufo
@@ -23,6 +25,8 @@ sidekiq
 strptime
 struct
 tempfile
+unscoped
 upcase
 upsert
+vattr_initialize
 webpacker
