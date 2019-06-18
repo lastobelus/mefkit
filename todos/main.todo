@@ -42,6 +42,17 @@ Base:
     ☐ choose a datepicker
     ☐ evaluate https://flatpickr.js.org (see https://github.com/adrienpoly/rails_stimulus_flatpickr)
 
+  Templates/Components:
+    do evil martians tutorial
+    evaluate komposable/komponent
+    consider forking slim and addding components
+      `app-page#main.compact obj=@object`
+      `  @app-nav.dark.skinny`
+      `  @app-sidebar`
+      `    = product_list`
+      `  p Some Stuff`
+      `  
+      - this will be like `=render 'components/app-page', obj: @object`, but will set the root element id to main, and merge 'compact' into the root element css class. It expects there to be a child component `app-nav` to which it will merge css classes 'dark' and 'skinny'. It expects a child component `app-sidebar` to which it will yield `product_list`. It will yield `p Some Stuff` into the `app-page`
   Javascript:
     ☐ javascript setup. improvement on sp system
     ☐ install and learn stimulus
@@ -77,3 +88,6 @@ Base:
   Deployment:
     ☐ research economical alternatives to heroku for hosting multiple rails experiments, and choose one
     ☐ invest $50/month on hosting & ensure CI/CD of the base on that hosting
+
+  Development: (2)
+    investigate and use [Overmind](https://github.com/DarthSim/overmind)
