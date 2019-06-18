@@ -10,6 +10,18 @@ Base:
     ✔ add vscode settings @done(2019-05-18 17:35)
     ✔ add todos @done(2019-05-18 17:35)
 
+  Development:
+    Linting:
+      ☐ rufo/rubocop settings, like in sp-fulfillment
+      ☐ eslint/prettier
+    ☐ use overmind
+    Start Working:
+      ☐ itermocil file
+      ☐ replace itermocil file with iterm python script, that is smart about what's already running
+      support for 10m habit:
+        ☐ start working, get next todo that takes < 10m
+        ☐ add next todo, and commit
+
   Specs:
     ☐ add high voltage and an about Mefkit page, then add a request spec for about mefkit
     ☐ CI with request spec
@@ -41,6 +53,7 @@ Base:
     ☐ add trix
     ☐ choose a datepicker
     ☐ evaluate https://flatpickr.js.org (see https://github.com/adrienpoly/rails_stimulus_flatpickr)
+
 
   Templates/Components:
     do evil martians tutorial

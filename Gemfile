@@ -48,6 +48,8 @@ gem 'slim', require: 'slim/smart'
 gem "slim-rails"
 # Markdown
 gem "redcarpet"
+# Stacic Pages
+gem 'high_voltage'
 
 
 ############################################################################
