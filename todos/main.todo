@@ -19,15 +19,17 @@ Base:
       ✔ itermocil file @done(2019-06-18 18:29)
       ☐ replace itermocil file with iterm python script, that is smart about what's already running
       support for 10m habit:
-        ☐ start working, get next todo that takes < 10m  @next
-        ☐ add next todo, and commit
+        ✔ start working, get next todo that takes < 10m @done(2019-06-18 19:40)
+          ✔ work-on-mefkit, cds & runs itermocil @done(2019-06-18 19:40)
+          ✔ itermocil edits this file @done(2019-06-18 19:40)
+        then add next todo, and commit
     Optimization/Debugging:
       ✔ cp gems I've used before @done(2019-06-18 18:27)
 
   Specs:
     ✔ add high voltage and a home page @done(2019-06-18 10:57)
     ✔ add high voltage hello page @done(2019-06-18 10:57)
-    ☐ spec high voltage home page
+    ☐ spec high voltage home page  @next
     ☐ spec link to hv hello page
     ☐ CI with request spec
     ☐ add devise

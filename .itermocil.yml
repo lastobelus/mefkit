@@ -8,6 +8,7 @@ windows:
       - commands:
           - export IS_IN_ITERMOCIL=1
           - git status
-          - git pull || (q -t mfkq; code .)
+          - git pull || (q -t mfkq; code .; code todos/main.todo; exit 0)
           - q -t mfkq
           - code .
+          - code todos/main.todo
