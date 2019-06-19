@@ -1,0 +1,13 @@
+windows:
+  - name: mefkit
+    root: .
+    layout: main-vertical
+    panes:
+      - export IS_IN_ITERMOCIL=1; q mfkq; rsv
+      - export IS_IN_ITERMOCIL=1; q mfkq; rcon
+      - commands:
+          - export IS_IN_ITERMOCIL=1
+          - git status
+          - git pull || (q -t mfkq; code .)
+          - q -t mfkq
+          - code .

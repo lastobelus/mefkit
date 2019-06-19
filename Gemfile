@@ -67,10 +67,11 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3'
   # better errors gives a console & clickable stacktraces in the browser
-  gem 'better_errors'
+  gem 'better_errors', github: 'lastobelus/better_errors', branch: 'sp-fulfillment'
   gem 'binding_of_caller'
 
   gem 'listen', '~> 3'
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -82,6 +83,19 @@ group :development do
   # memory profiling & benchmarks
   gem "memory_profiler"
   gem "derailed_benchmarks"
+
+  # Linting
+  gem 'rubocop'
+
+  # adds backtrace to queries
+  gem 'active_record_query_trace'
+
+  # ERD diagrams
+  gem "rails-erd"
+
+  # for chrome extension
+  gem 'meta_request'
+
 end
 
 ############################################################################
@@ -91,7 +105,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3'
+  gem 'guard-rspec', require: false
+  gem 'ruby-prof', '>= 0.17.0', require: false
+  gem 'stackprof'
+  gem 'test-prof'
+
 end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'

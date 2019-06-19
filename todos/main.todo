@@ -12,18 +12,23 @@ Base:
 
   Development:
     Linting:
-      ☐ rufo/rubocop settings, like in sp-fulfillment
+      ✔ rufo/rubocop settings, like in other projects @done(2019-06-18 18:27)
       ☐ eslint/prettier
-    ☐ use overmind
+    ✔ use overmind @done(2019-06-18 10:52)
     Start Working:
-      ☐ itermocil file
+      ✔ itermocil file @done(2019-06-18 18:29)
       ☐ replace itermocil file with iterm python script, that is smart about what's already running
       support for 10m habit:
-        ☐ start working, get next todo that takes < 10m
+        ☐ start working, get next todo that takes < 10m  @next
         ☐ add next todo, and commit
+    Optimization/Debugging:
+      ✔ cp gems I've used before @done(2019-06-18 18:27)
 
   Specs:
-    ☐ add high voltage and an about Mefkit page, then add a request spec for about mefkit
+    ✔ add high voltage and a home page @done(2019-06-18 10:57)
+    ✔ add high voltage hello page @done(2019-06-18 10:57)
+    ☐ spec high voltage home page
+    ☐ spec link to hv hello page
     ☐ CI with request spec
     ☐ add devise
     ☐ devise request specs, with CI
