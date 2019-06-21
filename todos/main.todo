@@ -29,8 +29,13 @@ Base:
   Specs:
     ✔ add high voltage and a home page @done(2019-06-18 10:57)
     ✔ add high voltage hello page @done(2019-06-18 10:57)
-    ☐ spec high voltage home page  @next
-    ☐ spec link to hv hello page
+    ✔ setup guard @done(2019-06-20 18:30)
+    ✔ setup show in browser from past projects @done(2019-06-20 19:04)
+    ✔ setup rspec html matchers from past projects @done(2019-06-20 19:04)
+    ✔ setup precompile assets in request specs @done(2019-06-20 19:04)
+    ✔ spec high voltage home page @done(2019-06-20 19:04)
+    ✔ spec link to hv hello page @done(2019-06-20 19:04)
+
     ☐ CI with request spec
     ☐ add devise
     ☐ devise request specs, with CI
@@ -42,7 +47,7 @@ Base:
     ☐ cypress CI
 
   Static Pages:
-    ☐ add high-voltage
+    ✔ add high-voltage @done(2019-06-20 19:04)
 
   Users:
     ☐ devise setup
@@ -52,6 +57,8 @@ Base:
     ☐ login with facebook
 
   GUI/CSS:
+    ☐ add tailwind @next
+      ☐ tailwind helloworld on home & hello pages
     ☐ choose a powerful widget platform
       ☐ must be themeable
       ☐ must be built on a standard
