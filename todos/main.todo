@@ -46,19 +46,11 @@ Base:
     ☐ action cable badge hello world with cypress test
     ☐ cypress CI
 
-  Static Pages:
-    ✔ add high-voltage @done(2019-06-20 19:04)
-
-  Users:
-    ☐ devise setup
-    ☐ administrate setup
-    ☐ login with google
-    ☐ login with github
-    ☐ login with facebook
-
   GUI/CSS:
-    ☐ add tailwind @next
-      ☐ tailwind helloworld on home & hello pages
+    ✔ add tailwind @done(2019-06-24 11:31)
+      ✔ tailwind helloworld on hello pages @done(2019-06-24 10:24)
+      ✔ tailwind on home page @done(2019-06-24 11:30)
+      ✘ spec that tailwind is loading @cancelled(2019-06-24 11:31)
     ☐ choose a powerful widget platform
       ☐ must be themeable
       ☐ must be built on a standard
@@ -67,6 +59,22 @@ Base:
     ☐ add trix
     ☐ choose a datepicker
     ☐ evaluate https://flatpickr.js.org (see https://github.com/adrienpoly/rails_stimulus_flatpickr)
+
+
+  Assets:
+    ☐ remove asset pipeline (sprockets)
+      https://medium.com/michelada-io/from-the-asset-pipeline-to-webpack-ce5a4bc323a9
+      https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
+      
+  Static Pages:
+    ✔ add high-voltage @done(2019-06-20 19:04)
+
+  Users:
+    ☐ devise setup @next
+    ☐ administrate setup
+    ☐ login with google
+    ☐ login with github
+    ☐ login with facebook
 
 
   Templates/Components:
@@ -115,6 +123,10 @@ Base:
   Deployment:
     ☐ research economical alternatives to heroku for hosting multiple rails experiments, and choose one
     ☐ invest $50/month on hosting & ensure CI/CD of the base on that hosting
+    CI of Deployment:
+      spec that css is loaded by checking the style of an element
+      spec that tailwind is minimized with postcss-purgecss
+
 
   Development: (2)
     investigate and use [Overmind](https://github.com/DarthSim/overmind)
