@@ -29,6 +29,12 @@
             "dictionaries": [
                 "rubyKeywords"
             ]
+        },
+        {
+            "languageId": "markdown",
+            "dictionaries": [
+                "rubyKeywords"
+            ]
         }
 
     ],
