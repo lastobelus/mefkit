@@ -72,9 +72,25 @@ Base:
   Users:
     ✔ devise setup @done(2019-06-25 21:57)
     ✔ administrate setup @done(2019-06-25 21:57)
-    ☐ login with github @next
+    ☐ login with github
+      https://medium.com/@salmaeng71/devise-authentication-guide-with-github-omniauth-for-rails-application-220aa52d5b82
+      ✔ add omniauth-github @done(2019-06-26 10:18)
+      ✔ setup github application @done(2019-06-26 10:43)
+      ☐ create a logo for github application
+      ✔ document github application setup @done(2019-06-26 10:43)
+      ☐ automate as much as possible of github application setup 
+      ☐ implement callbacks controller
+      ☐ review teesforthepeople
+      ☐ research oauth best practices @next
+        https://github.com/omniauth/omniauth/wiki/Managing-Multiple-Providers
+      ☐ create identity record
+      tests with admin model
+      tests with user model
     ☐ login with google
     ☐ login with facebook
+    verify both devise admins & devise users working
+    style devise admin views
+    style devise user views
 
 
   Templates/Components:
