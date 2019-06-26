@@ -50,7 +50,8 @@ gem "slim-rails"
 gem "redcarpet"
 # Stacic Pages
 gem 'high_voltage'
-
+# Avatars
+gem 'gravatar_image_tag'
 
 ############################################################################
 # Deployment
