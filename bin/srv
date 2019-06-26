@@ -1,2 +1,9 @@
 pgrep mailcatcher || mailcatcher &
-heroku local -f Procfile.dev
+
+source .env
+
+if command -v overmind >/dev/null 2>&1; then
+  overmind start -p 7770 -P 1 -f Procfile.dev -l web,webpacker
+else
+  PORT=7770 heroku local -f Procfile.dev
+fi
