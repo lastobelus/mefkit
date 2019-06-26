@@ -3,7 +3,7 @@ pgrep mailcatcher || mailcatcher &
 source .env
 
 if command -v overmind >/dev/null 2>&1; then
-  overmind start -p 7770 -P 1 -f Procfile.dev -l web,webpacker
+  overmind start -p 7770 -P 1 -f Procfile.dev -l web,assets
 else
   PORT=7770 heroku local -f Procfile.dev
 fi

@@ -1,0 +1,6 @@
+development:
+  ROOT_ADMIN_EMAIL: lastobelus@mac.com
+test:
+  ROOT_ADMIN_EMAIL: example@example.com
+production:
+  ROOT_ADMIN_EMAIL: lastobelus@mac.com
