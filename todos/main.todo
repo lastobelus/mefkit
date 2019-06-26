@@ -70,10 +70,10 @@ Base:
     ✔ add high-voltage @done(2019-06-20 19:04)
 
   Users:
-    ☐ devise setup @next
-    ☐ administrate setup
+    ✔ devise setup @done(2019-06-25 21:57)
+    ✔ administrate setup @done(2019-06-25 21:57)
+    ☐ login with github @next
     ☐ login with google
-    ☐ login with github
     ☐ login with facebook
 
 
