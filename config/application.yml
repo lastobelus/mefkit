@@ -5,5 +5,8 @@ development:
   GITHUB_OAUTH_APP_URI: https://github.com/settings/applications/1089005
 test:
   ROOT_ADMIN_EMAIL: example@example.com
+  GITHUB_OAUTH_APP_ID: 817586642042dd6fced3
+  GITHUB_OAUTH_APP_SECRET: 2e0c312761bc704511aef1925f13a60c32bbb12d
+  GITHUB_OAUTH_APP_URI: https://github.com/settings/applications/1089005
 production:
   ROOT_ADMIN_EMAIL: lastobelus@mac.com

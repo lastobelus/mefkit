@@ -18,6 +18,7 @@ Base:
     Start Working:
       ✔ itermocil file @done(2019-06-18 18:29)
       ☐ replace itermocil file with iterm python script, that is smart about what's already running
+      ☐ open in browser
       support for 10m habit:
         ✔ start working, get next todo that takes < 10m @done(2019-06-18 19:40)
           ✔ work-on-mefkit, cds & runs itermocil @done(2019-06-18 19:40)
@@ -35,6 +36,8 @@ Base:
     ✔ setup precompile assets in request specs @done(2019-06-20 19:04)
     ✔ spec high voltage home page @done(2019-06-20 19:04)
     ✔ spec link to hv hello page @done(2019-06-20 19:04)
+    ☐ fix deprecation
+       WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated.
 
     ☐ CI with request spec
     ☐ add devise
@@ -51,6 +54,8 @@ Base:
       ✔ tailwind helloworld on hello pages @done(2019-06-24 10:24)
       ✔ tailwind on home page @done(2019-06-24 11:30)
       ✘ spec that tailwind is loading @cancelled(2019-06-24 11:31)
+    Learn Tailwind:
+
     ☐ choose a powerful widget platform
       ☐ must be themeable
       ☐ must be built on a standard
