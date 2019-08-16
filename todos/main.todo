@@ -86,9 +86,10 @@ Base:
       ☐ automate as much as possible of github application setup 
       ☐ implement callbacks controller
       ☐ review teesforthepeople
-      ☐ research oauth best practices @next
+      ☐ research oauth best practices
         https://github.com/omniauth/omniauth/wiki/Managing-Multiple-Providers
-      ☐ create identity record
+      ✔ create identity record @done(2019-08-16 11:11)
+      ☐ add user model @next
       tests with admin model
       tests with user model
     ☐ login with google
