@@ -55,7 +55,7 @@ Base:
       ✔ tailwind on home page @done(2019-06-24 11:30)
       ✘ spec that tailwind is loading @cancelled(2019-06-24 11:31)
     Learn Tailwind:
-
+      https://tailwindcss.com/course/setting-up-tailwind-and-postcss/
     ☐ choose a powerful widget platform
       ☐ must be themeable
       ☐ must be built on a standard
