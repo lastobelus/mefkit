@@ -371,6 +371,7 @@ DEPENDENCIES
   listen (~> 3)
   memory_profiler
   meta_request
+  nokogiri
   pg
   puma
   rails (~> 6.0)

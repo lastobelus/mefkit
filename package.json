@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@rails/webpacker": "^4.0.4",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
     "stimulus": "^1.1.1"
   },
   "devDependencies": {
