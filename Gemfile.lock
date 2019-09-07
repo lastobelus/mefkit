@@ -5,6 +5,14 @@ GIT
     awesome_print (1.8.0)
 
 GIT
+  remote: https://github.com/ctran/annotate_models.git
+  revision: 111640d077836ced23cfffb882c93e40968ab9d9
+  specs:
+    annotate (2.7.5)
+      activerecord (>= 3.2, < 7.0)
+      rake (>= 10.4, < 13.0)
+
+GIT
   remote: https://github.com/lastobelus/better_errors.git
   revision: 5f2cdc63c8feda6f24f845805165b468a5a8a5b2
   branch: sp-fulfillment
@@ -274,6 +282,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    railroady (1.5.3)
     rails (6.0.0)
       actioncable (= 6.0.0)
       actionmailbox (= 6.0.0)
@@ -436,6 +445,7 @@ PLATFORMS
 DEPENDENCIES
   active_record_query_trace
   administrate!
+  annotate!
   awesome_print!
   bcrypt
   better_errors!
@@ -462,6 +472,7 @@ DEPENDENCIES
   omniauth-google
   pg
   puma
+  railroady
   rails (~> 6.0)
   rails-erd
   redcarpet

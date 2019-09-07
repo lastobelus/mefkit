@@ -119,9 +119,15 @@ group :development do
 
   # ERD diagrams
   gem "rails-erd"
-
+  gem "railroady"
+  
   # for chrome extension
   gem 'meta_request'
+
+  # tool to add schema comment to models, etc.
+  # run `bex annotate --exclude tests,fixtures,factories,serializers'` to annotate only models
+  # add # -*- SkipSchemaAnnotations to a file to skip
+  gem 'annotate', github: "ctran/annotate_models"
 
 end
 
