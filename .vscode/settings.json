@@ -12,7 +12,7 @@
       "keyword": false
     }
   },
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "editor.formatOnSave": true,
   "editor.formatOnSaveTimeout": 3000,
   "files.autoSave": "onFocusChange",

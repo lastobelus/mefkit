@@ -1,11 +1,12 @@
 require "rails_helper"
+require "rspec-html-matchers"
 
 RSpec.describe "home (static page)", type: :request do
   include RSpecHtmlMatchers
 
   describe "GET /pages/home" do
     it "loads and has a link to hello page" do
-      get '/'
+      get "/"
 
       expect(response).to have_http_status(200)
 

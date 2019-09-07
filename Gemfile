@@ -64,6 +64,11 @@ gem 'gravatar_image_tag'
 gem 'figaro'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+############################################################################
+# Debugging
+############################################################################
+gem 'awesome_print', github: 'awesome-print/awesome_print'
+
 
 ############################################################################
 # Development Tools

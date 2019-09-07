@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/awesome-print/awesome_print.git
+  revision: 4564fd74721562cbef2443f7d97109bf9192343d
+  specs:
+    awesome_print (1.8.0)
+
+GIT
   remote: https://github.com/lastobelus/better_errors.git
   revision: 5f2cdc63c8feda6f24f845805165b468a5a8a5b2
   branch: sp-fulfillment
@@ -352,6 +358,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_record_query_trace
+  awesome_print!
   bcrypt
   better_errors!
   binding_of_caller
