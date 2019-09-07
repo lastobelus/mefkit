@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: identities
+#
+#  provider          :string
+#  uid               :string
+#
+# Indexes
+#
+#  index_identities_on_identifiable_type_and_identifiable_id  (identifiable_type,identifiable_id)
+#
+
 class Identity < ApplicationRecord
   belongs_to :identifiable, polymorphic: true
 

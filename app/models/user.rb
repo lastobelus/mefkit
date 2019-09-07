@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: admins
+# Table name: users
 #
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string           indexed
@@ -24,16 +24,15 @@
 #
 # Indexes
 #
-#  index_admins_on_confirmation_token    (confirmation_token) UNIQUE
-#  index_admins_on_email                 (email) UNIQUE
-#  index_admins_on_reset_password_token  (reset_password_token) UNIQUE
-#  index_admins_on_unlock_token          (unlock_token) UNIQUE
+#  index_users_on_confirmation_token    (confirmation_token) UNIQUE
+#  index_users_on_email                 (email) UNIQUE
+#  index_users_on_reset_password_token  (reset_password_token) UNIQUE
+#  index_users_on_unlock_token          (unlock_token) UNIQUE
 #
 
-class Admin < ApplicationRecord
+class User < ApplicationRecord
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable, :timeoutable, :omniauthable
-
   include Identities::identifiable
 end

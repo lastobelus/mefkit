@@ -142,6 +142,9 @@ Base:
 
   Living Style Guide:
 
+  ActiveRecord:
+    ☐ use ransack (instead of filterrific) @created(2019-09-07 13:31)
+    
   Deployment:
     ☐ research economical alternatives to heroku for hosting multiple rails experiments, and choose one
     ☐ invest $50/month on hosting & ensure CI/CD of the base on that hosting
