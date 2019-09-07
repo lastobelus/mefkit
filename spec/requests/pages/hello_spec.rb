@@ -1,4 +1,5 @@
 require "rails_helper"
+require "rspec-html-matchers"
 
 RSpec.describe "hello (static page)", type: :request do
   include RSpecHtmlMatchers
@@ -9,8 +10,8 @@ RSpec.describe "hello (static page)", type: :request do
 
       expect(response).to have_http_status(200)
 
-      show_in_browser(response.body)
-      sleep 50
+      # show_in_browser(response.body)
+
       expect(response.body).to(
         have_tag(:h1) do
           with_text "Hello World"

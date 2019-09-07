@@ -10,11 +10,16 @@ end
 
 
 ############################################################################
+# explicit dependecies for independent updating
+############################################################################
+gem 'nokogiri'
+
+############################################################################
 # Rails (what rails new gave us)
 ############################################################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 6.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -72,8 +77,13 @@ gem 'gravatar_image_tag'
 ############################################################################
 gem 'figaro'
 # admin dashboards, https://github.com/thoughtbot/administrate
-gem "administrate"
+gem "administrate", github: "thoughtbot/administrate"
 gem 'bootsnap', '>= 1.1.0', require: false
+
+############################################################################
+# Debugging
+############################################################################
+gem 'awesome_print', github: 'awesome-print/awesome_print'
 
 
 ############################################################################
@@ -128,15 +138,13 @@ group :development, :test do
   gem 'ruby-prof', '>= 0.17.0', require: false
   gem 'stackprof'
   gem 'test-prof'
+  gem 'capybara', '>= 2.15'
 
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 3.0'
   gem 'rspec-html-matchers'
 
   gem 'vcr'
