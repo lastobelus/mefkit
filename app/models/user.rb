@@ -32,7 +32,7 @@
 
 class User < ApplicationRecord
   devise :database_authenticatable,
-         :recoverable, :rememberable, :trackable, :validatable,
-         :confirmable, :lockable, :timeoutable, :omniauthable
-  include Identities::identifiable
+         :recoverable, :rememberable, :trackable,
+         :confirmable, :lockable, :timeoutable
+  include Identities::Identifiable
 end

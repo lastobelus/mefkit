@@ -32,8 +32,8 @@
 
 class Admin < ApplicationRecord
   devise :database_authenticatable,
-         :recoverable, :rememberable, :trackable, :validatable,
-         :confirmable, :lockable, :timeoutable, :omniauthable
+         :recoverable, :rememberable, :trackable,
+         :confirmable, :lockable, :timeoutable
 
-  include Identities::identifiable
+  include Identities::Identifiable
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_07_204546) do
+ActiveRecord::Schema.define(version: 2019_09_07_223959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,7 +50,16 @@ ActiveRecord::Schema.define(version: 2019_09_07_204546) do
     t.string "provider"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "access_token"
+    t.string "refresh_token"
+    t.string "name"
+    t.string "email"
+    t.string "nickname"
+    t.string "image"
+    t.string "phone"
+    t.text "urls"
     t.index ["identifiable_type", "identifiable_id"], name: "index_identities_on_identifiable_type_and_identifiable_id"
+    t.index ["provider", "uid"], name: "index_identities_on_provider_and_uid", unique: true
   end
 
   create_table "users", comment: "Normal app users. Uses devise for authentication.", force: :cascade do |t|

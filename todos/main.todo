@@ -89,14 +89,20 @@ Base:
       ☐ research oauth best practices
         https://github.com/omniauth/omniauth/wiki/Managing-Multiple-Providers
       ✔ create identity record @done(2019-08-16 11:11)
-      ☐ add user model @next
+      ✔ add user model @done(2019-09-07 14:13)
+      ☐ setup devise to use omniauth with multiple models @created(2019-09-07 14:14) @next
+        https://github.com/plataformatec/devise/wiki/OmniAuth-with-multiple-models
       tests with admin model
       tests with user model
     ☐ login with google
     ☐ login with facebook
-    verify both devise admins & devise users working
-    style devise admin views
-    style devise user views
+    ☐ verify both devise admins & devise users working @created(2019-09-07 15:13)
+    ☐ style devise admin views @created(2019-09-07 15:13)
+    ☐ style devise user views @created(2019-09-07 15:13)
+    ☐ able to setup/upgrade identity/permissions @created(2019-09-07 15:32)
+      https://stackoverflow.com/questions/12741436/devise-omniauth-facebook-add-permissions
+      https://willschenk.com/articles/2015/setting-up-devise-with-twitter-and-facebook-and-other-omniauth-schemes-without-email-addresses/
+    ☐ review https://github.com/plataformatec/devise/wiki/How-to-Setup-Multiple-Devise-User-Models @critical @created(2019-09-07 15:19)
 
 
   Templates/Components:
@@ -144,7 +150,7 @@ Base:
 
   ActiveRecord:
     ☐ use ransack (instead of filterrific) @created(2019-09-07 13:31)
-    
+
   Deployment:
     ☐ research economical alternatives to heroku for hosting multiple rails experiments, and choose one
     ☐ invest $50/month on hosting & ensure CI/CD of the base on that hosting
