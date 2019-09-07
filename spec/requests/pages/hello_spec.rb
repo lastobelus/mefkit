@@ -8,11 +8,10 @@ RSpec.describe "hello (static page)", type: :request do
     it "loads and has a link to hello page" do
       get page_path("hello")
 
-      ap response
       expect(response).to have_http_status(200)
-      show_in_browser(response.body)
 
-      sleep 50
+      # show_in_browser(response.body)
+
       expect(response.body).to(
         have_tag(:h1) do
           with_text "Hello World"

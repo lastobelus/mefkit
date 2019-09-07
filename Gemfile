@@ -120,15 +120,13 @@ group :development, :test do
   gem 'ruby-prof', '>= 0.17.0', require: false
   gem 'stackprof'
   gem 'test-prof'
+  gem 'capybara', '>= 2.15'
 
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 3.0'
   gem 'rspec-html-matchers'
 
   gem 'vcr'
