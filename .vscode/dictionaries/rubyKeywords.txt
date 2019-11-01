@@ -8,11 +8,13 @@ codeship
 constantize
 dasherize
 demodulize
+deserialize
 downcase
 dyno
 filterrific
 fixnum
 gemfile
+graphql
 gsub
 hotfix
 jsonb
@@ -22,6 +24,7 @@ ljust
 logstash
 ltrim
 minio
+mutex
 oauth
 omniauth
 openstruct
@@ -48,4 +51,5 @@ upsert
 upserted
 uuid
 vattr_initialize
+webhook
 webpacker
