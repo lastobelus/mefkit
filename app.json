@@ -1,0 +1,10 @@
+{
+  "name": "mefkit",
+  "description": "Rails Starter app",
+  "keywords": [],
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rails db:migrate"
+    }
+  }
+}
