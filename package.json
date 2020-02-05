@@ -3,15 +3,15 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.0.4",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@rails/webpacker": "4.2.2",
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
+    "postcss-preset-env": "^6.6.0",
     "stimulus": "^1.1.1",
-    "tailwindcss": "^1.0.4",
-    "@fullhuman/postcss-purgecss": "^1.2.0",
-    "postcss-preset-env": "^6.6.0"
+    "tailwindcss": "^1.0.4"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.4.1"
+    "webpack-dev-server": "^3.10.3"
   }
 }
