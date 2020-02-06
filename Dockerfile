@@ -1,4 +1,4 @@
-FROM pawurb/ruby-jemalloc-node-yarn:latest
+FROM lastobelus/ruby-node-yarn:latest
 
 COPY Gemfile* /tmp/
 COPY package.json /tmp/
