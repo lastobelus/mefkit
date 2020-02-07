@@ -4,8 +4,8 @@ COPY Gemfile* /tmp/
 COPY package.json /tmp/
 COPY yarn.lock /tmp/
 WORKDIR /tmp
-RUN bundle install --jobs 5 --retry 5 --without development test
 RUN yarn install
+RUN bundle install --jobs 5 --retry 5 --without development test
 
 RUN mkdir /app
 WORKDIR /app
