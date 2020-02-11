@@ -65,15 +65,23 @@ jobs:
       - name: Bundle install and setup database
         env:
           RAILS_ENV: test
-          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+        run: |
+          bundle install --jobs 4 --retry 3 --without development
+
+      - name: Setup database
+        env:
+          RAILS_ENV: test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
         run: |
           cp config/database.yml.github-actions config/database.yml
-          bundle install --jobs 4 --retry 3 --without development
           bundle exec rails db:prepare
 
       - name: Run Specs
         env:
           RAILS_ENV: test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
         run: |
           bundle exec rspec
