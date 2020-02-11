@@ -1,4 +1,17 @@
 language: ruby
-cache: bundler
-rvm:
-  - 2.6.5
+cache:
+  bundler: true
+
+addons:
+  postgresql: "11.6"
+
+services:
+  - postgresql
+  - redis-server
+
+before_install:
+  - nvm install $(cat .nvmrc)
+
+script:
+  - bin/rails db:setup RAILS_ENV=test
+  - bundle exec rspec
