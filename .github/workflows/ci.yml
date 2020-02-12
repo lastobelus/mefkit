@@ -68,6 +68,9 @@ jobs:
         run: |
           bundle install --jobs 4 --retry 3 --without development
 
+      - name: Yarn install
+        run: yarn --frozen-lockfile
+
       - name: Compile assets
         env:
           RAILS_ENV: test
