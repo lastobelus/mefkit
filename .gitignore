@@ -48,3 +48,7 @@ yarn-debug.log*
 .yarn-integrity
 
 .env*
+
+# cypress test artifacts
+spec/cypress/screenshots
+spec/cypress/videos
