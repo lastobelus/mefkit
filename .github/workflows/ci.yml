@@ -49,9 +49,9 @@ jobs:
         uses: actions/cache@v1
         with:
           path: vendor/bundle
-          key: bundle-use-ruby-${{ runner.os }}-${{ hashFiles('**/Gemfile.lock') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
-            bundle-use-ruby-${{ runner.os }}-
+            ${{ runner.os }}-gems-
 
       - name: Get yarn cache
         id: yarn-cache
