@@ -19,6 +19,7 @@ jobs:
       POSTGRES_PASSWORD: postgres
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       RAILS_ENV: test
+      TEST_SERVER_PORT: 7771
 
     services:
       postgres:
@@ -103,6 +104,14 @@ jobs:
           cp config/database.yml.github-actions config/database.yml
           bundle exec rails db:prepare
 
+      - name: Start test server
+        run: |
+          bundle exec rails s &
+
       - name: Run Specs
         run: |
           bundle exec rspec
+
+      - name: Run Cypress tests
+        run: |
+          yarn cypress run --project ./spec
