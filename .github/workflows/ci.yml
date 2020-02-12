@@ -19,7 +19,7 @@ jobs:
       POSTGRES_PASSWORD: postgres
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       RAILS_ENV: test
-      TEST_SERVER_PORT: 7771
+      PORT: 7771
 
     services:
       postgres:
