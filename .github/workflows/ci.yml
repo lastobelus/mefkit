@@ -45,6 +45,9 @@ jobs:
         with:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
+      - name: Update bundler
+        run: gem install bundler
+
       - name: Setup gem cache
         uses: actions/cache@v1
         with:
