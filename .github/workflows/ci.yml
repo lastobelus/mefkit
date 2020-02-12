@@ -62,11 +62,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Bundle install and setup database
+      - name: Bundle install
         env:
           RAILS_ENV: test
         run: |
           bundle install --jobs 4 --retry 3 --without development
+
+      - name: Compile assets
+        env:
+          RAILS_ENV: test
+          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+        run: |
+          bundle exec rails assets:precompile
 
       - name: Setup database
         env:
