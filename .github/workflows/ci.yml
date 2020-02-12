@@ -90,7 +90,7 @@ jobs:
 
       - name: Compile assets
         run: |
-          bundle exec rails assets:precompile
+          bundle exec rails webpacker:compile
 
       - name: Setup database
         run: |
