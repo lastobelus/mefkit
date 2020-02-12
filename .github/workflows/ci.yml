@@ -3,12 +3,15 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+      RAILS_ENV: test
+
     services:
       postgres:
         image: postgres:11-alpine
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
         ports:
           - 5432:5432
         options: >-
@@ -63,8 +66,6 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Bundle install
-        env:
-          RAILS_ENV: test
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3 --without development
@@ -73,26 +74,14 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Compile assets
-        env:
-          RAILS_ENV: test
-          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
         run: |
           bundle exec rails assets:precompile
 
       - name: Setup database
-        env:
-          RAILS_ENV: test
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
         run: |
           cp config/database.yml.github-actions config/database.yml
           bundle exec rails db:prepare
 
       - name: Run Specs
-        env:
-          RAILS_ENV: test
-          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
         run: |
           bundle exec rspec
