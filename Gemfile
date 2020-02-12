@@ -116,6 +116,7 @@ group :development, :test do
   gem "stackprof"
   gem "test-prof"
   gem "capybara", ">= 2.15"
+  gem "cypress-on-rails"
 end
 
 group :test do
