@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUNDLE_CACHE_ALL: true
-      BUNDLE_PATH: /vendor/bundle
-      BUNDLE_CACHE_PATH: /vendor/bundle
-      BUNDLE_BIN: /vendor/bundle
-      GEM_HOME: /vendor/bundle
+      BUNDLE_PATH: vendor/bundle
+      BUNDLE_CACHE_PATH: vendor/bundle
+      BUNDLE_BIN: vendor/bundle
+      GEM_HOME: vendor/bundle
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
@@ -56,7 +56,7 @@ jobs:
       - name: Setup gem cache
         uses: actions/cache@v1
         with:
-          path: /vendor/bundle
+          path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
