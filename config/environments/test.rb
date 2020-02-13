@@ -16,12 +16,6 @@ Rails.application.configure do
   # preloads Rails for running tests, you may have to set it to true.
   config.eager_load = false
 
-  # we use precompiled assets to speed up multiple test runs
-  config.assets.enabled = false
-
-  # we need to use a different prefix so that we don't interfere with development environment
-  config.assets.prefix = "test-assets"
-
   # Configure public file server for tests with Cache-Control for performance.
   config.public_file_server.enabled = true
   config.public_file_server.headers = {

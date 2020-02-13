@@ -1,5 +1,11 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,6 +19,7 @@ jobs:
       POSTGRES_PASSWORD: postgres
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       RAILS_ENV: test
+      PORT: 7771
 
     services:
       postgres:
@@ -73,6 +80,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - name: Setup assets cache
+        uses: actions/cache@v1
+        with:
+          path: public/test-assets
+          key: ${{ runner.os }}-assets-1-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-assets-
+
       - name: Bundle install
         run: |
           bundle install --jobs 4 --retry 3 --without development
@@ -82,13 +97,21 @@ jobs:
 
       - name: Compile assets
         run: |
-          bundle exec rails assets:precompile
+          bundle exec rails webpacker:compile
 
       - name: Setup database
         run: |
           cp config/database.yml.github-actions config/database.yml
           bundle exec rails db:prepare
 
+      - name: Start test server
+        run: |
+          bundle exec rails s &
+
       - name: Run Specs
         run: |
           bundle exec rspec
+
+      - name: Run Cypress tests
+        run: |
+          yarn cypress run --project ./spec

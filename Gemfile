@@ -22,8 +22,7 @@ gem "rails", "~> 6.0"
 gem "pg"
 # Use Puma as the app server
 gem "puma"
-# Use SCSS for stylesheets
-gem "sass-rails"
+
 # Use Redis adapter to run Action Cable in production
 gem "redis"
 # Use ActiveModel has_secure_password
@@ -117,6 +116,7 @@ group :development, :test do
   gem "stackprof"
   gem "test-prof"
   gem "capybara", ">= 2.15"
+  gem "cypress-on-rails"
 end
 
 group :test do
