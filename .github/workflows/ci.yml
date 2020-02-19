@@ -45,10 +45,6 @@ jobs:
       - name: Install ruby using .rubyversion
         uses: ruby/setup-ruby@v1
 
-      - name: Install PostgreSQL 11 client (RADAR remove after march 2020)
-        run: |
-          sudo apt-get -yqq install libpq-dev
-
       - name: Read node version from .nvmrc
         run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
         id: nvm
