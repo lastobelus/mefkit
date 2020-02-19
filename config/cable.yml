@@ -1,12 +1,8 @@
 development:
-  adapter: redis
-  url: <%= ENV['REDIS_URL'] %>
-  channel_prefix: mefkit_development
+  adapter: any_cable
 
 test:
   adapter: async
 
 production:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: mefkit_production
+  adapter: any_cable

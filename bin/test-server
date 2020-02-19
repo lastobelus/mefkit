@@ -3,7 +3,7 @@ source .env.test
 bundle exec rails webpacker:compile
 
 if command -v overmind >/dev/null 2>&1; then
-  overmind start -p 7771 -P 1 -f Procfile.test -l web,webpacker,cypress
+  overmind start -p 7780 -P 1 -f Procfile.test -l web,webpacker,cypress
 else
-  PORT=7771 heroku local -f Procfile.test
+  PORT=7780 heroku local -f Procfile.test
 fi

@@ -52,8 +52,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  api_domain = ENV.fetch("APP_DOMAIN")
-  port = ENV.fetch("PORT")
-  config.action_cable.url = "ws://#{api_domain}:#{port}/cable"
-  config.action_cable.allowed_request_origins = ["http://127.0.0.1:#{port}", "https://#{api_domain}:#{port}", "http://#{api_domain}:#{port}"]
+  app_domain = ENV.fetch("APP_DOMAIN")
+  port = ENV.fetch("ANYCABLE_PORT")
+  config.action_cable.url = "ws://#{app_domain}:#{port}/cable"
+  config.action_cable.allowed_request_origins = ["http://127.0.0.1:#{port}", "https://#{app_domain}:#{port}", "http://#{app_domain}:#{port}"]
 end

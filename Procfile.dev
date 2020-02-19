@@ -1,2 +1,4 @@
 web: bundle exec rails s
 webpacker: ./bin/webpack-dev-server
+anycable: bundle exec anycable
+anycablego: anycable-go --host=$ANYCABLE_DOMAIN --port=$ANYCABLE_PORT
