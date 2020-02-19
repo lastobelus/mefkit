@@ -1,2 +1,2 @@
 web: bundle exec rails s
-cypress: yarn cypress open --project ./spec
+cypress: CYPRESS_BASE_URL=http://${APP_DOMAIN}:${PORT} yarn cypress open --project ./spec

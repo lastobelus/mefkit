@@ -7,7 +7,7 @@ production:
   APP_DOMAIN: mefkit.metafeat.com
   ANYCABLE_DOMAIN: mefkit-ws.metafeat.com
 test:
-  PORT: 7"7"80
+  PORT: "7780"
   ANYCABLE_PORT: "7782"
   APP_DOMAIN: localhost
   ANYCABLE_DOMAIN: localhost

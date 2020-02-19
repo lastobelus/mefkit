@@ -1,9 +1,11 @@
 source .env.test
 
+echo "PORT: $PORT"
+
 bundle exec rails webpacker:compile
 
 if command -v overmind >/dev/null 2>&1; then
-  overmind start -p 7780 -P 1 -f Procfile.test -l web,webpacker,cypress
+  OVERMIND_ENV=.env.test overmind start -f Procfile.test -l web,webpacker,cypress
 else
   PORT=7780 heroku local -f Procfile.test
 fi
