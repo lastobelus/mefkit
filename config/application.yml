@@ -1,0 +1,5 @@
+development:
+  PORT: 7770
+  API_DOMAIN: localhost
+production:
+  API_DOMAIN: mefkit.metafeat.com
