@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# ignore Brewfile.lock
+Brewfile.lock.json
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -52,3 +55,5 @@ yarn-debug.log*
 # cypress test artifacts
 spec/cypress/screenshots
 spec/cypress/videos
+
+.vsgitbuild

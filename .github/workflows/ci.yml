@@ -17,13 +17,19 @@ jobs:
       GEM_HOME: vendor/bundle
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       RAILS_ENV: test
-      PORT: 7771
+      PORT: 7780
+      APP_DOMAIN: 127.0.0.1
 
     services:
       postgres:
         image: postgres:11-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
         ports:
           - 5432:5432
         options: >-
@@ -44,10 +50,6 @@ jobs:
 
       - name: Install ruby using .rubyversion
         uses: ruby/setup-ruby@v1
-
-      - name: Install PostgreSQL 11 client (RADAR remove after march 2020)
-        run: |
-          sudo apt-get -yqq install libpq-dev
 
       - name: Read node version from .nvmrc
         run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
@@ -114,4 +116,4 @@ jobs:
 
       - name: Run Cypress tests
         run: |
-          yarn cypress run --project ./spec
+          CYPRESS_BASE_URL=http://${APP_DOMAIN}:${PORT} yarn cypress run --project ./spec

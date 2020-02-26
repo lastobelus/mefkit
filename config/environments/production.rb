@@ -34,11 +34,13 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
-  # config.action_cable.url = 'wss://example.com/cable'
-  # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
+
+  api_domain = ENV.fetch("APP_DOMAIN")
+  config.action_cable.url = "wss://#{api_domain}/cable"
+  config.action_cable.allowed_request_origins = ["https://#{api_domain}", "http://#{api_domain}"]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = false
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.

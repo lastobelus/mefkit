@@ -1,0 +1,13 @@
+development:
+  PORT: "7770"
+  ANYCABLE_PORT: "7772"
+  APP_DOMAIN: 127.0.0.1
+  ANYCABLE_DOMAIN: 127.0.0.1
+production:
+  APP_DOMAIN: mefkit.metafeat.com
+  ANYCABLE_DOMAIN: mefkit-ws.metafeat.com
+test:
+  PORT: "7780"
+  ANYCABLE_PORT: "7782"
+  APP_DOMAIN: localhost
+  ANYCABLE_DOMAIN: localhost

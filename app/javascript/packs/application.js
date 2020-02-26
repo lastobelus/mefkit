@@ -15,8 +15,9 @@
 // const imagePath = (name) => images(name, true)
 
 import Turbolinks from "turbolinks";
-import Rails from "rails-ujs";
+import Rails from "@rails/ujs";
 
+import "channels";
 import "controllers";
 import "../styles/base.css";
 

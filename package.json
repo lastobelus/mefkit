@@ -4,19 +4,20 @@
   "private": true,
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
-    "actioncable": "^5.2.4-1",
     "color": "^3.1.2",
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
     "postcss-preset-env": "^6.6.0",
-    "rails-ujs": "^5.2.4-1",
     "stimulus": "^1.1.1",
     "tailwindcss": "^1.0.4",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
     "cypress": "^4.0.1",
+    "localtunnel": "^2.0.0",
     "webpack-dev-server": "^3.10.3"
   }
 }
